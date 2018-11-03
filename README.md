@@ -5,7 +5,11 @@
 ## Setup
 <pre>
 $ git clone https://github.com/WouldULike/BloodDonation-App.git
+$ cd blood-app
 $ npm install
+$ node registerAdmin.js
+$ node registerUser.js 
+$ npm start
 </pre>
 
 ## url
