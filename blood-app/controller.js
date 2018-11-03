@@ -287,9 +287,9 @@ controller.prototype.registeruser = function(req,res){
     //mysql 회원db에 회원등록
 
 		var connection = mysql.createConnection({
-	  host : 'localhost',
-   	user : 'root',
-  	password : 'konyang',
+	  host : '192.168.99.10',
+   	user : 'devel',
+  	password : 'devel',
 		port:3306,
   	database : 'blockchain'});
 
@@ -392,9 +392,9 @@ controller.prototype.loginuser = function(req,res){
 
     if(userid!="" && password!=""){
 			var conn = mysql.createConnection({
-			host : 'localhost',
-			user : 'root',
-			password : 'konyang',
+			host : '192.168.99.10',
+			user : 'devel',
+			password : 'devel',
 			port:3306,
 			database : 'blockchain'});
 
