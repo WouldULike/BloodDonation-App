@@ -13,7 +13,7 @@ var tx_id = null;
 
 module.exports = (function(){
 
-    const ROOT_DOMAIN = 'grpc://192.168.0.57';
+    const ROOT_DOMAIN = 'grpc://192.168.99.20';
     var helper = {};
     // console.log('Store path:'+store_path);
     var channel = fabric_client.newChannel('mychannel');

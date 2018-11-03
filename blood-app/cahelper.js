@@ -34,7 +34,7 @@ module.exports = (function(){
           fabric_client.setCryptoSuite(crypto_suite);
 
           // be sure to change the http to https when the CA is running TLS enabled
-          fabric_ca_client = new Fabric_CA_Client('http://192.168.99.100:7054', null , '', crypto_suite);
+          fabric_ca_client = new Fabric_CA_Client('http://192.168.99.20:7054', null , '', crypto_suite);
 
           // first check to see if the admin is already enrolled
           return fabric_client.getUserContext('admin', true);
@@ -75,7 +75,7 @@ cahelper.enrollCaUser = function(id,password,handler,errhandler){
       crypto_suite.setCryptoKeyStore(crypto_store);
       fabric_client.setCryptoSuite(crypto_suite);
       // be sure to change the http to https when the CA is running TLS enabled
-      fabric_ca_client = new Fabric_CA_Client('http://192.168.99.100:7054', null , '',crypto_suite);
+      fabric_ca_client = new Fabric_CA_Client('http://192.168.99.20:7054', null , '',crypto_suite);
   return fabric_ca_client.enroll({enrollmentID: id, enrollmentSecret: password});
 }).then(function(enrollment){
   console.log("ca enroll user success")

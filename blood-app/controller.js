@@ -26,8 +26,8 @@ var config = {};
   
 var connection = mysql.createConnection({
 	host     : 'ec2-52-15-254-236.us-east-2.compute.amazonaws.com',
-	user     : 'root',
-	password : '1q2w3e!@#',
+	user     : 'devel',
+	password : 'devel',
 	database : 'blockchain'
   });
 var connection = mysql.createConnection(config);
